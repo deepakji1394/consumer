@@ -1,0 +1,20 @@
+
+consumer.kafkaProperties:
+  topicStr: ${KAFKA_TOPIC_STR}
+  syncAllTopic: ${SYNC_ALL_TOPIC}
+  acks: all
+  bootstrapServers: ${KAFKA_BOOTSTRAP_SERVERS}
+  group: ${KAFKA_GROUP}
+  keyDeserializer: org.apache.kafka.common.serialization.StringDeserializer
+  valueDeserializer: org.apache.kafka.common.serialization.StringDeserializer
+  keySerializer: org.apache.kafka.common.serialization.StringSerializer
+  valueSerializer: org.apache.kafka.common.serialization.StringSerializer
+  numOfThreads: ${KAFKA_NUM_OF_THREADS}
+  maxPollRecords: ${KAFKA_MAX_POLL_RECORDS}
+  retries: ${KAFKA_RETRIES}
+  pollTimeout: ${KAFKA_POLL_TIMEOUT}
+  partitionStr: ${KAFKA_PARTITION_STR}
+  heartbeatIntervalMs: ${KAFKA_HEARTBEAT_INTERVAL_MS}
+  sessionTimeoutMs: ${KAFKA_SESSION_TIMEOUT_MS}
+  maxPollIntervalMs: ${KAFKA_MAX_POLL_INTERVAL_MS}
+  requestTimeoutMs: ${KAFKA_REQUEST_TIMEOUT_MS}
